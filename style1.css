@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(4,9,37,0.75),rgba(4,9,37,0.75));
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.container img{
+    position: absolute;
+    margin: 20px;
+    border: solid 4px blueviolet;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+.container img{
+    width: 200px;
+    height: 85px;
+    border-radius: 15%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 8px 12px;
+    margin-top: 20px;
+    position: relative;
+}
+.nav-links ul li a{
+    text-align: right;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+
+}
+.nav-links ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #f44;
+    display: block;
+    bottom: 3px;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.logo{
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+}
+.logo h1{
+    color: white;
+    font-size: 45px;
+    padding: 20px;
+}
+.logo p{
+    color: white;
+    font-size: 15px;
+}
+.btn{
+    margin-top: 20px;
+}
+.btn1{
+    background-color:gray;
+    border: goldenrod 3px solid;
+    margin-top: 5%;
+    border-radius: 25%;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: 1s;
+    z-index: 1;
+}
+.btn1:hover{
+    height: 41px;
+    width: 165px;
+    background-color: #f44;
+}
+.container h1{
+    text-align: center;
+    color: white;
+    font-size: 45px;
+}
+.container p{
+    color: white;
+    padding-left: 20px;
+}
+.container a{
+    padding-left: 20px;
+    color: fuchsia;
+}
+.content{
+    width: 90%;
+    height: 700px;
+    display: grid;
+    margin:10% 5% 5% 5%;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 10px;
+    grid-template-areas:
+    "t1 c1 c1 c1 c1"
+    "t2 c2 c2 c2 c2"
+    "t3 c3 c3 c3 c3";
+}
+.row1{
+    height: 50%;
+    padding: 10px;
+    border: #f44 solid 1px;
+    grid-area: t1;
+    color: white;
+}
+.item1{
+    height: 50%;
+    padding: 10px;
+    grid-area: c1;
+    border: #f44 solid 1px;
+    color: white;
+}
+.item1 ul li{
+    list-style-type: none;
+    padding-left: 25px;
+    padding-top: 5px;
+}
+.row2{
+    color: white;
+    height: 50%;
+    padding: 10px;
+    grid-area: t2;
+    border: #f44 solid 1px;
+
+}
+.item2{
+    color: white;
+    height: 50%;
+    padding: 10px;
+    grid-area: c2;
+    border: #f44 solid 1px; 
+}
+.item2 ul li{
+    list-style-type: none;
+    padding-left: 25px;
+    padding-top: 15px;
+}
+.item2 ul li a{
+    text-decoration: none;
+
+}
+.row3{
+    color: white;
+    height: 50%;
+    padding: 10px;
+    grid-area: t3;
+    border: #f44 solid 1px;
+   
+}
+.item3{
+    color: white;
+    height: 50%;
+    padding: 10px;
+    grid-area: c3;
+    border: #f44 solid 1px;
+}
+.item3 ul li{
+    padding-left: 25px;
+    padding-top: 5px;
+    list-style-type: none;
+}
+.footer{
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    border: 1px dotted;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.footer ul li{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.container p{
+    text-align: center;
+}
+.container h2{
+    font-size: 20px;
+}
+.courses{
+    position: relative;
+    background-color: aliceblue;
+    margin: 20px 10px 20px 5px;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+}
+.courses ul li{
+    list-style-type: none;
+    padding: 10px;
+}
+.course-classes{
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1,200px);
+    grid-template-areas: "c1 c2 c3 c4 c5 c6";
+    grid-gap: 2px;
+}
+.course1{
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid blue;
+}
+.course2{
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid blue;
+}
+.course3{
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid blue;
+}
+.course4{
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid blue; 
+}
+.course5{
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid blue;
+}
+.course6{
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+    border: 1px solid blue;
+}
+.user-form{
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.user-form form p{
+    text-align: left;
+    padding-top: 10px;
+    font-size: 15px;
+}
+.user-form form label{
+    padding-top: 10px;
+    display: block;
+}
+.inputs{
+    background-color:darkcyan;
+    padding: 20px;
+    border:chartreuse 1px solid;
+    border-radius: 5%;
+}
+button{
+    width: 150px;
+    height: 35px;
+    background-color:gray;
+    border: goldenrod 3px solid;
+    border-radius: 15%;
+}
+.log-signup input{
+    position: relative;
+    margin-left: 20%;
+    width: 100px;
+    height: 25px;
+    background-color:gray;
+    border: goldenrod 3px solid;
+    border-radius: 15%;
+}
+@media(max-width:800px){
+    .logo{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links ul li a{
+        text-align: left;
+    }
+    .nav-links{
+        position: absolute;
+        width: 33%;
+        height: 100vh;
+        background: #f44;
+        color: white;
+        z-index: 1;
+        padding: 20px;
+        top: 0;
+        left: 0;
+        text-align: left;
+    }
+    .container h1{
+        font-size: 20px;
+    }
+    .container p{
+        font-size: 10px;
+    }
+    .container img{
+        width: 100px;
+        height: 55px;
+        border-radius: 15%;
+    }
+    .content{
+        display: block;
+        grid-gap: 10px;
+    }
+    .item1{
+        height: 15.5%;
+        font-size: 10px;
+    }
+    .row1{
+        height: 5.5%;
+        font-size: 10px;
+    }
+    .item2{
+        height: 15.5%;
+        font-size: 10px;
+    }
+    .row2{
+        height: 5.5%;
+        font-size: 10px;
+    }
+    .item3{
+        height: 15.5%;
+        font-size: 10px;
+    }
+    .row3{
+        height: 5.5%;
+        font-size: 10px;
+    }
+    .courses{
+        height: 800px;
+    }
+    .course-classes{
+        margin-top: 10px;
+        position: relative;
+        grid-template-rows: repeat(6,75px);
+        display: block;
+    }
+    .course-classes img{
+        height: 100px;
+        width: auto;
+    }
+    .footer{
+        font-size: 10px;
+    }
+}
